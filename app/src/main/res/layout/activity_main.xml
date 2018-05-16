@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/idProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="368dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/idBtnDown"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="开始下载"
+        app:layout_constraintTop_toBottomOf="@+id/idEtTargetLocation"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/idEtTargetLocation"
+        android:layout_width="369dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="存放位置："
+        app:layout_constraintTop_toBottomOf="@+id/idEtTargetURL"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:text="目标文件URL:"
+        app:layout_constraintBottom_toTopOf="@+id/idEtTargetURL"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <EditText
+        android:id="@+id/idEtTargetURL"
+        android:layout_width="368dp"
+        android:layout_height="234dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+</android.support.constraint.ConstraintLayout>
